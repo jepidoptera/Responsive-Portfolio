@@ -52,6 +52,7 @@ hr {
     width: 960px;
     height: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 #nametag {
@@ -90,7 +91,7 @@ hr {
 }
 
 #aboutTab:hover, #contactTab:hover, #portfolioTab:hover {
-    z-index: 9;
+    z-index: 100;
 }
 
 #mainContent{
@@ -118,4 +119,37 @@ hr {
     font-size: 8pt;
     color: wheat;
 }
+
+/* alterations for smaller screens */
+@media screen and (max-width: 1080px) {
+    #iframePanel, #headerContent {
+        width: 87.5%
+    }
+}
+
+@media screen and (max-width: 632px) {
+    #nametag {
+        font-size: 24pt;
+        font-weight: 200;
+        height: 75%;
+        width: 100%;
+        background-color: cadetblue;
+        padding: 10px;
+        color: aliceblue;
+        text-align: center;
+        display: inline-block;
+        float: none;
+        /* overflow-x: auto; */
+    }
+    
+    #tabs {
+        /* margin: auto 0; */
+        /* float: left; */
+        /* display: block; */
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        /* margin: auto 0; */
+        /* clear: right; */
+    }}
 
